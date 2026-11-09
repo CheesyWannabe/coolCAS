@@ -249,6 +249,8 @@ def jn(L,start):
     else:
       s+='*'+q
   return s
+CLEAR=[1]
+
 def Pm(L):
   c=R(1)
   num=[]
@@ -281,6 +283,10 @@ def Pm(L):
   ds=jn(den,st)
   if len(den)+(c.q!=1)>1:
     ds='('+ds+')'
+  elif CLEAR[0] and ('^' in ds or '*' in ds) and not (ds[0]=='(' and ds[-1]==')' and ds.count('(')==1):
+    ds='('+ds+')'
+  if CLEAR[0] and len(num)+(p!=1)>1:
+    ns='('+ns+')'
   return sg+ns+'/'+ds
 def Pp(e):
   b,x=e[1],e[2]

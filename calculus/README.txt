@@ -1,4 +1,4 @@
-TI-84 Evo Math Suite  (version 1.4, Nov 2026)
+TI-84 Evo Math Suite  (version 1.4.1, Nov 2026)
 Python programs for the TI-84 Evo. Exact answers with working shown.
 
 PROGRAMS (run these)
@@ -53,6 +53,11 @@ MEMORY
   free it afterwards. If you ever see "Out of memory", run
   MEMTEST and look at the free memory numbers it prints.
 
+CLEAR BRACKETS
+  Fractions are printed as (top)/(bottom) when either part
+  has several factors, eg (cos(p)*sin(p)*r^3)/((r^2+2)^2).
+  To turn this off, edit INTA: change CLEAR=[1] to CLEAR=[0].
+
 TYPING TIPS
   ^ or ** for powers, implicit multiply ok (2x, xy)
   ln(x) needs brackets; log(x) also means ln
@@ -67,6 +72,7 @@ LIMITS OF THE TOOL
   SADDLE/OPTIM search a box |x|,|y| <= 5 by default.
 
 CHANGES
+  1.4.1 clear brackets around fractions
   1.4  added VECTOR; OPTIM shows exact max/min values even
        when the point is messy; parser accepts u v w
   1.3.1 REGION intersection search uses far less memory
