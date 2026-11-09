@@ -133,6 +133,7 @@ coolCAS is a *mini* CAS:
 
 | Version | Changes |
 |---|---|
+| [1.4.1](https://github.com/CheesyWannabe/coolCAS/releases/tag/v1.4.1) | Fixed [#1](https://github.com/CheesyWannabe/coolCAS/issues/1): results now show clear brackets around fractions |
 | 1.4 | Added `VECTOR`. `OPTIM` shows exact max/min values even when coordinates are messy |
 | 1.3.1 | `REGION`'s intersection search uses far less memory |
 | 1.3 | `REGION` / `CHGVAR` / `COORDS` split into on-demand parts to fit in memory |
